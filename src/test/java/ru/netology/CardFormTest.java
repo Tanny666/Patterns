@@ -15,7 +15,7 @@ import static com.codeborne.selenide.Selenide.open;
 public class CardFormTest {
 
     @BeforeAll
-    static void setUpAll() {
+    static void setUPAll(){
         SelenideLogger.addListener("allure", new AllureSelenide());
     }
 
@@ -23,6 +23,7 @@ public class CardFormTest {
     static void tearDownAll() {
         SelenideLogger.removeListener("allure");
     }
+
 
     @BeforeEach
     void setup() {
